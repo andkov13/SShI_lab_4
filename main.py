@@ -1,4 +1,5 @@
 import numpy as np
+np.bool8 = bool
 import gym
 import matplotlib.pyplot as plt
 
@@ -147,6 +148,6 @@ def test_q_learning(env, q_table, num_games=1000):
 
 avg_reward, avg_penalties, avg_steps = test_q_learning(env, q_table)
 
-print(f"Середня нагорода за 1000 ігор: {avg_reward}")
+print(f"Середня рахунок за 1000 ігор: {avg_reward}")
 print(f"Середня к-сть штрафів за 1000 ігор: {avg_penalties}")
 print(f"Середня кількість кроків за гру: {avg_steps}")
